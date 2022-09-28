@@ -1,0 +1,28 @@
+
+
+<odoo>
+  <record model="ir.actions.act_window" id="course_list_action">
+       <field name="picking_id">PickingID</field>
+       <field name="partner_id">PartnerID</field>
+       <field name="license_plate">LicensePlate</field>
+       <field name="picking_partner_id">PickingPartnerId</field>
+       <field name="picking_date_done">PickingDateDone</field>
+       <field name="palette_count_plus">PaletteCountPlus</field>
+       <field name="palette_count_minus">PaletteCountMinus</field>
+         <field name="balance">Balance</field>
+                <p class="o_view_nocontent_smiling_face">Create the first Palette Tracker
+                </p>
+        </record>
+
+        <!-- top level menu: no parent -->
+        <menuitem id="main_palette.tracking_menu" name="PaletteTracking"/>
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <menuitem id="palette.tracking_menu" name="PaletteTracking"
+                  parent="main_palette.tracking_menu"/>
+        <!-- the following menuitem should appear *after*
+             its parent openacademy_menu and *after* its
+             action course_list_action -->
+        <menuitem id="picking_id" name="PickingId" parent="palette.tracking_menu"
+                  action="picking_id_list_action"/>
+</odoo>

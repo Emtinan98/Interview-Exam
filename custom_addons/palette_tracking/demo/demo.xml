@@ -1,0 +1,13 @@
+<odoo>
+   <record model="palette.tracking" id="picking_id">
+       <field name="picking_id">PickingID</field>
+       <field name="partner_id">PartnerID</field>
+       <field name="license_plate">LicensePlate</field>
+       <field name="picking_partner_id">PickingPartnerId</field>
+       <field name="picking_date_done">PickingDateDone</field>
+       <field name="palette_count_plus">PaletteCountPlus</field>
+       <field name="palette_count_minus">PaletteCountMinus</field>
+         <field name="balance">Balance</field>
+   </record>
+
+</odoo>
